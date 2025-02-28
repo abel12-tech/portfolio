@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import BlogDetail from './pages/BlogDetail';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const AnimatedRoutes = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.main>
