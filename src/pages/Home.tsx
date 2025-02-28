@@ -33,8 +33,8 @@ const Home = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-xl text-gray-600 mb-8"
             >
-              Senior Full Stack Developer specializing in React, React Native,
-              and modern web technologies.
+              Web and Mobile App Developer specializing in React, React Native,
+              and modern technologies.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ const Home = () => {
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://github.com"
+                  href="https://github.com/abel12-tech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-black transition-colors duration-200"
@@ -63,7 +63,7 @@ const Home = () => {
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/abel-kinfu-690a29260/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-black transition-colors duration-200"
