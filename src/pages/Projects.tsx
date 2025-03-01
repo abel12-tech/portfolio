@@ -22,8 +22,8 @@ const projects = [
       "Redux Toolkit",
       "Tailwind CSS",
     ],
-    link: "https://dashboard.com",
-    github: "https://github.com",
+    link: "https://dawaafinder.com/",
+    github: "https://github.com/Yaidevs/new-dawafinder-system-admin",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const projects = [
       "Redux Toolkit",
       "Firebase",
     ],
-    link: "https://taskmanager.com",
-    github: "https://github.com",
+    link: "https://betale.et",
+    github: "https://github.com/abel12-tech/Betale",
   },
   {
     id: 3,
@@ -48,8 +48,8 @@ const projects = [
       "The Admin Panel for Hotel Management is a web-based dashboard for managing hotels registered on our booking platform. It allows admins to add, edit, and remove hotels, track bookings,and manage commission settings.",
     image: dash1,
     technologies: ["React", "Redux", "Redux Toolkit", "Tailwind CSS"],
-    link: "https://project.com",
-    github: "https://github.com",
+    link: "https://github.com/Yaidevs/afroperia-hotel-admin",
+    github: "https://github.com/Yaidevs/afroperia-hotel-admin",
   },
   {
     id: 4,
@@ -58,8 +58,8 @@ const projects = [
       "Kuno is an online shopping app that allows users to create their own shops, list products for sale, and connect with buyers through an in-app chat feature. ",
     image: kuno,
     technologies: ["React Native", "Expo"],
-    link: "https://realestate.com",
-    github: "https://github.com",
+    link: "https://github.com/abel12-tech/kuno-online-shopping",
+    github: "https://github.com/abel12-tech/kuno-online-shopping",
   },
   // {
   //   id: 5,
