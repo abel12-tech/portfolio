@@ -114,14 +114,16 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100"
+              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col h-full"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
+              <div className="relative w-full pt-[50.25%]">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute top-0 left-0 w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-6 flex-grow">
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">

@@ -112,11 +112,13 @@ const BlogDetail = () => {
             <span>Back to Blog</span>
           </Link>
 
-          <img
-            src={post.image}
-            alt={post.title}
-            className="w-full h-[400px] object-cover rounded-xl mb-8"
-          />
+          <div className="relative w-full pt-[56.25%] rounded-xl overflow-hidden mb-8">
+            <img
+              src={post.image}
+              alt={post.title}
+              className="absolute top-0 left-0 w-full h-full object-cover object-center"
+            />
+          </div>
 
           {/* <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">

@@ -110,14 +110,16 @@ const Home = () => {
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full"
             >
-              <img
-                src={dash2}
-                alt="DawaaFinder Admin Panel"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
+              <div className="relative w-full pt-[50.25%]">
+                <img
+                  src={dash2}
+                  alt="DawaaFinder Admin Panel"
+                  className="absolute top-0 left-0 w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-6 flex-grow">
                 <div className="flex flex-wrap gap-2 mb-3">
                   <span className="text-xs font-medium bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
                     React js
@@ -152,14 +154,16 @@ const Home = () => {
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full"
             >
-              <img
-                src={betale}
-                alt="Betale"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
+              <div className="relative w-full pt-[50.25%]">
+                <img
+                  src={betale}
+                  alt="Betale"
+                  className="absolute top-0 left-0 w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-6 flex-grow">
                 <div className="flex flex-wrap gap-2 mb-3">
                   <span className="text-xs font-medium bg-pink-100 text-pink-800 px-2 py-1 rounded">
                     React Js
@@ -194,14 +198,16 @@ const Home = () => {
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full"
             >
-              <img
-                src={dash1}
-                alt="Admin Panel For Hotel Management"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
+              <div className="relative w-full pt-[50.25%]">
+                <img
+                  src={dash1}
+                  alt="Admin Panel For Hotel Management"
+                  className="absolute top-0 left-0 w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-6 flex-grow">
                 <div className="flex flex-wrap gap-2 mb-3">
                   <span className="text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded">
                     React
