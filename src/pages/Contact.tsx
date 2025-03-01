@@ -32,27 +32,26 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
-            <div className="space-y-6">
+            <div className="space-y-6 ml-8">
               <div className="flex items-start space-x-4">
                 <Mail className="h-6 w-6 text-gray-600" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600">your.email@example.com</p>
+                  <p className="text-gray-600">abelkinfu678@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Phone className="h-6 w-6 text-gray-600" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-gray-600">+1 (123) 456-7890</p>
+                  <p className="text-gray-600">+251936722187</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <MapPin className="h-6 w-6 text-gray-600" />
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-gray-600">Your City, Country</p>
+                  <p className="text-gray-600">Ethiopia ,Jimma</p>
                 </div>
               </div>
             </div>
@@ -74,7 +73,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
+                  className="w-full outline-none px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
                   required
                 />
               </div>
@@ -91,7 +90,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
+                  className="w-full outline-none px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
                   required
                 />
               </div>
@@ -108,7 +107,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
+                  className="w-full outline-none px-4 py-2 border border-gray-300 rounded-lg focus:ring-black focus:border-black"
                   required
                 ></textarea>
               </div>

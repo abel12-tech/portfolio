@@ -88,7 +88,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Featured Projects Section */}
       <div className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -108,7 +107,90 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {/* E-commerce Platform */}
+            <motion.div
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.2 }}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <img
+                src={dash2}
+                alt="DawaaFinder Admin Panel"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="text-xs font-medium bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
+                    React js
+                  </span>
+                  <span className="text-xs font-medium bg-red-100 text-red-800 px-2 py-1 rounded">
+                    Tailwind CSS
+                  </span>
+                  <span className="text-xs font-medium bg-indigo-100 text-indigo-800 px-2 py-1 rounded">
+                    Redux Toolkit
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  DawaaFinder Admin Panel
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  The DawaaFinder Admin Panel is a management dashboard for
+                  overseeing pharmacies and health organizations on the
+                  DawaaFinder platform. It enables admins to manage partner
+                  pharmacies, handle blogs, ads, and medicine products, and
+                  update information based on the medicine formulary.
+                </p>
+                <a
+                  href="https://dawaafinder.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-medium hover:underline inline-flex items-center"
+                >
+                  View Project <ArrowRight className="h-4 w-4 ml-1" />
+                </a>
+              </div>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.2 }}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <img
+                src={betale}
+                alt="Betale"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="text-xs font-medium bg-pink-100 text-pink-800 px-2 py-1 rounded">
+                    React Js
+                  </span>
+                  <span className="text-xs font-medium bg-orange-100 text-orange-800 px-2 py-1 rounded">
+                    Tailwind CSS
+                  </span>
+                  <span className="text-xs font-medium bg-teal-100 text-teal-800 px-2 py-1 rounded">
+                    Redux Toolkit
+                  </span>
+                  <span className="text-xs font-medium bg-green-100 text-green-800 px-2 py-1 rounded">
+                    Redux
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Betale</h3>
+                <p className="text-gray-600 mb-4">
+                  Betale is a platform that allows users to rent, sell, and buy
+                  houses with ease. It features advanced filter options and a
+                  user-friendly UI, enabling users to search for properties
+                  based on location, price, and types.
+                </p>
+                <a
+                  href="https://betale.et"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-medium hover:underline inline-flex items-center"
+                >
+                  View Project <ArrowRight className="h-4 w-4 ml-1" />
+                </a>
+              </div>
+            </motion.div>
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ duration: 0.2 }}
@@ -116,7 +198,7 @@ const Home = () => {
             >
               <img
                 src={dash1}
-                alt="E-commerce Platform"
+                alt="Admin Panel For Hotel Management"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
@@ -125,99 +207,23 @@ const Home = () => {
                     React
                   </span>
                   <span className="text-xs font-medium bg-green-100 text-green-800 px-2 py-1 rounded">
-                    Node.js
+                    Redux
                   </span>
                   <span className="text-xs font-medium bg-purple-100 text-purple-800 px-2 py-1 rounded">
-                    MongoDB
+                    Redux Toolkit
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  E-commerce Platform
+                  Admin Panel for Hotel Management
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  A full-featured e-commerce solution with real-time inventory,
-                  secure payments, and an intuitive admin dashboard.
+                  The Admin Panel for Hotel Management is a web-based dashboard
+                  for managing hotels registered on our booking platform. It
+                  allows admins to add, edit, and remove hotels, track bookings,
+                  and manage commission settings.
                 </p>
                 <Link
-                  to="/projects"
-                  className="text-black font-medium hover:underline inline-flex items-center"
-                >
-                  View Project <ArrowRight className="h-4 w-4 ml-1" />
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* AI-Powered Analytics Dashboard */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-            >
-              <img
-                src={dash2}
-                alt="Analytics Dashboard"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="text-xs font-medium bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
-                    Next.js
-                  </span>
-                  <span className="text-xs font-medium bg-red-100 text-red-800 px-2 py-1 rounded">
-                    TensorFlow
-                  </span>
-                  <span className="text-xs font-medium bg-indigo-100 text-indigo-800 px-2 py-1 rounded">
-                    D3.js
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  AI Analytics Dashboard
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Real-time analytics platform with AI-powered insights,
-                  predictive modeling, and interactive visualizations.
-                </p>
-                <Link
-                  to="/projects"
-                  className="text-black font-medium hover:underline inline-flex items-center"
-                >
-                  View Project <ArrowRight className="h-4 w-4 ml-1" />
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Health & Fitness App */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-            >
-              <img
-                src={betale}
-                alt="Fitness App"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="text-xs font-medium bg-pink-100 text-pink-800 px-2 py-1 rounded">
-                    React Native
-                  </span>
-                  <span className="text-xs font-medium bg-orange-100 text-orange-800 px-2 py-1 rounded">
-                    GraphQL
-                  </span>
-                  <span className="text-xs font-medium bg-teal-100 text-teal-800 px-2 py-1 rounded">
-                    Firebase
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Health & Fitness App
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Cross-platform fitness app with personalized workouts,
-                  nutrition tracking, and social features.
-                </p>
-                <Link
-                  to="/projects"
+                  to="/"
                   className="text-black font-medium hover:underline inline-flex items-center"
                 >
                   View Project <ArrowRight className="h-4 w-4 ml-1" />

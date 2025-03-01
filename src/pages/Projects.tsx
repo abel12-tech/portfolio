@@ -11,66 +11,78 @@ import kuno from "../assets/images/kuno.png";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "DawaaFinder Admin Panel",
     description:
-      "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Includes user authentication, product management, cart functionality, and payment processing.",
-    image: dash1,
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    link: "https://project.com",
-    github: "https://github.com",
-  },
-  {
-    id: 2,
-    title: "Social Media Dashboard",
-    description:
-      "Real-time social media analytics dashboard with data visualization, user engagement metrics, and automated reporting features.",
+      " The DawaaFinder Admin Panel is a management dashboard for overseeing pharmacies and health organizations on the DawaaFinder platform. It enables admins to manage partner pharmacies, handle blogs, ads, and medicine products, and update information based on the medicine formulary.",
     image: dash2,
-    technologies: ["React", "D3.js", "Firebase", "Material-UI"],
+    technologies: [
+      "React",
+      "Redux",
+      "Firebase",
+      "Redux Toolkit",
+      "Tailwind CSS",
+    ],
     link: "https://dashboard.com",
     github: "https://github.com",
   },
   {
-    id: 3,
-    title: "AI-Powered Task Manager",
+    id: 2,
+    title: "Betale",
     description:
-      "Smart task management application that uses AI to prioritize tasks, suggest optimal scheduling, and provide productivity insights.",
+      "Betale is a platform that allows users to rent, sell, and buy houses with ease. It features advanced filter options and a user-friendly UI, enabling users to search for properties based on location, price, and types.",
     image: betale,
-    technologies: ["React Native", "Python", "TensorFlow", "FastAPI"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Redux",
+      "Redux Toolkit",
+      "Firebase",
+    ],
     link: "https://taskmanager.com",
     github: "https://github.com",
   },
   {
-    id: 4,
-    title: "Real Estate Platform",
+    id: 3,
+    title: "Admin Panel for Hotel Management",
     description:
-      "Modern real estate platform with virtual tours, mortgage calculator, and AI-powered property recommendations.",
+      "The Admin Panel for Hotel Management is a web-based dashboard for managing hotels registered on our booking platform. It allows admins to add, edit, and remove hotels, track bookings,and manage commission settings.",
+    image: dash1,
+    technologies: ["React", "Redux", "Redux Toolkit", "Tailwind CSS"],
+    link: "https://project.com",
+    github: "https://github.com",
+  },
+  {
+    id: 4,
+    title: "Kuno",
+    description:
+      "Kuno is an online shopping app that allows users to create their own shops, list products for sale, and connect with buyers through an in-app chat feature. ",
     image: kuno,
-    technologies: ["Next.js", "Three.js", "PostgreSQL", "AWS"],
+    technologies: ["React Native", "Expo"],
     link: "https://realestate.com",
     github: "https://github.com",
   },
-  {
-    id: 5,
-    title: "Health & Fitness App",
-    description:
-      "Comprehensive fitness tracking application with workout plans, nutrition tracking, and progress visualization.",
-    image:
-      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["React Native", "GraphQL", "Node.js", "MongoDB"],
-    link: "https://fitness.com",
-    github: "https://github.com",
-  },
-  {
-    id: 6,
-    title: "Educational Platform",
-    description:
-      "Interactive learning platform with video courses, quizzes, and real-time collaboration features.",
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    technologies: ["Vue.js", "Django", "WebRTC", "Redis"],
-    link: "https://education.com",
-    github: "https://github.com",
-  },
+  // {
+  //   id: 5,
+  //   title: "Kuno",
+  //   description:
+  //     "Kuno is an online shopping app that allows users to create their own shops, list products for sale, and connect with buyers through an in-app chat feature. ",
+  //   image:
+  //     "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+  //   technologies: ["React Native", "GraphQL", "Node.js", "MongoDB"],
+  //   link: "https://fitness.com",
+  //   github: "https://github.com",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Educational Platform",
+  //   description:
+  //     "Interactive learning platform with video courses, quizzes, and real-time collaboration features.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+  //   technologies: ["Vue.js", "Django", "WebRTC", "Redis"],
+  //   link: "https://education.com",
+  //   github: "https://github.com",
+  // },
 ];
 
 const ITEMS_PER_PAGE = 4;

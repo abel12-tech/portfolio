@@ -138,11 +138,11 @@ const Blog = () => {
           ))}
         </motion.div>
 
-        <Pagination
+        {/* <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
-        />
+        /> */}
       </div>
     </div>
   );
