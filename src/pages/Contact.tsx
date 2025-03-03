@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Breadcrumb from "../components/Breadcrumb";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,10 +12,27 @@ const Contact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false); // Track loading state
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    setLoading(true); // Set loading state
+
+    const serviceID = "service_ngkbjya"; 
+    const templateID = "template_cge19xr"; 
+    const userID = "zGjv1sX2gtyWt7vIN"; 
+
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then(() => {
+        toast.success("Email sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Email failed to send:", error);
+        toast.error("Failed to send email. Try again later.");
+      })
+      .finally(() => setLoading(false)); // Reset loading state
   };
 
   const handleChange = (
@@ -28,7 +48,7 @@ const Contact = () => {
     <div className="min-h-screen bg-white pt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumb />
-
+        <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
@@ -51,7 +71,7 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-gray-600" />
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-gray-600">Ethiopia ,Jimma</p>
+                  <p className="text-gray-600">Ethiopia, Jimma</p>
                 </div>
               </div>
             </div>
@@ -61,10 +81,7 @@ const Contact = () => {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                   Name
                 </label>
                 <input
@@ -78,10 +95,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email
                 </label>
                 <input
@@ -95,10 +109,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                   Message
                 </label>
                 <textarea
@@ -114,8 +125,9 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                disabled={loading} // Disable button while sending
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
