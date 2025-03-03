@@ -6,7 +6,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import dash1 from "../assets/images/photo_2023-12-04_10-37-54.jpg";
 import dash2 from "../assets/images/photo_2024-09-02_11-32-50.jpg";
 import betale from "../assets/images/Screenshotfrom2025-02-2810-27-45.png";
-import kuno from "../assets/images/kuno.png";
+import kuno from "../assets/images/grouped.png";
 
 const projects = [
   {
@@ -114,7 +114,7 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col h-full"
+              className="bg-white p-2 rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col h-full"
             >
               <div className="relative w-full pt-[50.25%]">
                 <img
